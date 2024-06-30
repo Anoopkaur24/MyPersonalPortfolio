@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anoop Kaur's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #4CAF50;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill, .project {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            flex: 1 1 calc(33% - 40px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .skill:hover, .project:hover {
+            transform: translateY(-10px);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Anoop Kaur's Portfolio
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="./images/IMG_3537.JPG" alt="Anoop Kaur" class="profile-pic">
+        <p>Hello! My name is Anoop Kaur. I am currently a student at SAIT, Calgary Alberta, pursuing my studies in software development diploma and will be finishing it in Sept 2024.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Proficient in modern JavaScript frameworks and libraries.</p>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Experienced in Python programming for backend development.</p>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <p>Skilled in building interactive UIs with React.</p>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Shift Eaze</h3>
+                <p>In my final semester, I developed Shift Eaze, a shift clock-in and clock-out app designed to help employees easily track their working hours and manage their shifts efficiently.</p>
+            </div>
+            <div class="project">
+                <h3>Recipe App</h3>
+                <p>This simple mobile app provides details about various recipes, including ingredients, steps, and tips for cooking delicious meals at home.</p>
+            </div>
+            <div class="project">
+                <h3>GitHub Repositories</h3>
+                <p>Check out more of my projects on my <a href="https://github.com/Anoopkaur24?tab=repositories" target="_blank">GitHub page</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: <a href="mailto:anoopkaur2124@gmail.com">anoopkaur2124@gmail.com</a></p>
+    </section>
+</div>
+
+</body>
+</html>
